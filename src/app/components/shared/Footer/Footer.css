@@ -1,0 +1,16 @@
+footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 10px;
+    background-color: var(--footer-bc);
+}
+nav {
+    display: flex;
+    align-items: center;
+}
+a {
+    text-decoration: none;
+    margin-left: 10px;
+    color: var(--color-nav-links);
+    font-size: var(--font-size-nav-links);
+}

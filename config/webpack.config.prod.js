@@ -1,13 +1,13 @@
 const path = require('path')
 
 const dir = {
-  PUBLIC: path.resolve(__dirname, '../public'),
+  SRC: path.resolve(__dirname, '../src'),
   DIST: path.resolve(__dirname, '../dist'),
   ROOT: path.resolve(__dirname, '..'),
 };
 
 module.exports = {
-  entry: `${dir.ROOT}/src/app.js`,
+  entry: dir.SRC, // location of index.js
   output: {
     path: dir.DIST,
     filename: 'bundle.js',

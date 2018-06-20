@@ -1,0 +1,19 @@
+#adder {
+    background-color: var(--adder-component-bc);
+    width: fit-content;
+    height: fit-content;
+    padding: 20px;
+    font-size: var(--font-size-text);
+    color: var(--adder-text-color);
+}
+#increment-button {
+    background-color: var(--increment-button-bc);
+    margin-top: 20px;
+    font-size: var(--font-size-text);
+    outline: none;
+    cursor: pointer;
+}
+
+#counter {
+    font-size: var(--font-size-text);
+}

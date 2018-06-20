@@ -1,3 +1,14 @@
+:root {
+    --header-bc: #9ad3de;
+    --mainbody-bc: #fae596;
+    --footer-bc: #89bdd3;
+    --color-nav-links: #22264b;
+    --font-size-nav-links: 20px;
+    --adder-component-bc: #0462b9;
+    --increment-button-bc: #c661f5;
+    --font-size-text: 20px;
+    --adder-text-color: #fdce35;
+}
 body {
     display: flex;
     flex-direction: column;

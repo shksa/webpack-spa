@@ -1,0 +1,16 @@
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-grow: 1;
+    padding: 0px 10px;
+    background-color: var(--mainbody-bc);
+}
+
+#chooser-wrapper {
+    margin-top: 20px;
+}
+
+#chosen-component-wrapper {
+    margin-top: 100px;
+}
