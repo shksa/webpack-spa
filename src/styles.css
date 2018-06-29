@@ -9,9 +9,3 @@
     --font-size-text: 20px;
     --adder-text-color: #fdce35;
 }
-body {
-    display: flex;
-    flex-direction: column;
-    margin: 0;
-    font-family: sans-serif;
-}

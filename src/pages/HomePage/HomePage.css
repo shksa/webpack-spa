@@ -7,6 +7,12 @@ main {
     background-color: var(--mainbody-bc);
 }
 
+#home-page {
+    display: flex; 
+    flex-direction: column;
+    height: 100vh;
+}
+
 #chooser-wrapper {
     margin-top: 20px;
 }
