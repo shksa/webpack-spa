@@ -1,4 +1,5 @@
 const path = require('path')
+const webpack = require('webpack');
 
 const dir = {
   SRC: path.resolve(__dirname, '../src'),
@@ -14,17 +15,15 @@ module.exports = {
     filename: 'bundle.js',
   },
   mode: "development",
-  devtool: 'inline-source-map',
+  devtool: 'cheap-module-eval-source-map',
   devServer: {
     contentBase: dir.STATIC, // absolute location of index.html in the current project, tells the server where to look for index.html.
-    compress: true // enable gzip compression
-    // publicPath: '/' by default. 
-    // The project will run from the server at http://localhost:8080/
-    // webpack output is served from /. The output is the bundle.js file.
-    // Content not from webpack is served from /Users/sreekarnimbalkar/Desktop/JS/playground/static
-    // Content not from webpack is the index.html which is not touched by webpack, it is just a static file
-    // served from the dev server.
+    compress: true, // enable gzip compression
+    hot: true
   },
+  plugins: [
+    new webpack.HotModuleReplacementPlugin()
+  ],
   module: {
     rules: [
       {
